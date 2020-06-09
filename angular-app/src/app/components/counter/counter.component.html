@@ -1,0 +1,9 @@
+<aside>
+    <span *ngIf="(count$ | async) > 0">
+        {{ count$ | async }}
+    </span>
+
+    <button type="button" (click)="handleIncrement()">
+        Increment
+    </button>
+</aside>
